@@ -8,7 +8,7 @@
     "build-views": "pug src/views -o build --pretty",
     "build-js": "exit 0",
     "build-css": "lessc --clean-css src/styles/page.less build/css/page.min.css",
-    "build": "npm run build-clean && npm run build-assets && npm run build-views && npm run build-js && npm run build-css",
+    "build": "npm run build-assets && npm run build-views && npm run build-js && npm run build-css",
     "release": "npm run build && mv build release",
     "serve": "static build",
     "mon": "nodemon --exec 'npm run build && npm run serve' --watch src -e js,pug,less",
