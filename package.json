@@ -1,0 +1,33 @@
+{
+  "name": "www",
+  "version": "1.33.7",
+  "description": "require('lx') webpage",
+  "scripts": {
+    "build": "pug src/views -o build --pretty",
+    "serve": "static build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/require-lx/www.git"
+  },
+  "keywords": [
+    "Node.js",
+    "JavaScript",
+    "Lisbon"
+  ],
+  "author": "David Dias <mail@daviddias.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/require-lx/www/issues"
+  },
+  "homepage": "https://github.com/require-lx/www#readme",
+  "dependencies": {
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "less": "^2.7.1",
+    "node-static": "^0.7.8",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
